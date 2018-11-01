@@ -8,6 +8,7 @@ import tkinter.filedialog
 from tkinter.filedialog import askopenfilename
 root = Tk()
 root.title("Scanner")
+root.iconbitmap('icon.ico')
 #root.geometry("500x500")
 root.resizable(width=True,height=True)
 img = PhotoImage(file="btn.png") ##import

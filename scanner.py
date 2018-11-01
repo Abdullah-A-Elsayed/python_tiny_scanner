@@ -54,13 +54,13 @@ def ask_open_file(event):
 def get_token(i):
     token = ''
     token_type =''
-    while(tiny[i]=='{' or tiny[i]==' '):
+    while tiny[i]=='{' or tiny[i]==' ' or tiny[i] == '\t':
         if tiny[i]=='{':
             while (tiny[i]!='}'):
                 i+=1
             i+=1
 
-        while tiny[i]==' ':
+        while tiny[i]==' ' or tiny[i] == '\t':
             i+=1
             if i>= len(tiny):
                 return (i,'','')
